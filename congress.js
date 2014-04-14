@@ -9,7 +9,7 @@ $(document).ready(function () {
 		$('body > header > span:nth-child(1)').fadeOut(300);
 		$('.all-the-results').delay(500).fadeIn(700);
 				
-		var apiKey = '0f088c7409054f8c86318d8d969a5ca6',
+		var apiKey = '06bb09b47d9f48d99a70bbe000fe275d',
 			zipCode = $('#txt-zip').val(),
 			$resultsArea1 = $('#sen-lookup-results'),
 			$resultsArea2 = $('#house-lookup-results');
