@@ -8,7 +8,7 @@ $(document).ready(function () {
 		$('body > header > h1').fadeOut(300);
 		$('body > header > span:nth-child(1)').fadeOut(300);
 		$('.all-the-results').delay(500).fadeIn(700);
-		$('body > header').css('height', '50px');
+		$('body > header').delay(500).css('height', '50px');
 				
 		var apiKey = '06bb09b47d9f48d99a70bbe000fe275d',
 			zipCode = $('#txt-zip').val(),
