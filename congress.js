@@ -27,11 +27,11 @@ $(document).ready(function () {
 			
 				var mySenatePeople = '<p class="results-title">Senators</p>';
 			
-				$.each(data.results, function(i, rep) {
+				$.each(data.results, function(i, represent) {
 					if ('senate' === rep.chamber.toLowerCase()) {
 						mySenatePeople += '<p>';
-						mySenatePeople += '<a class="pol-name" href="' + rep.contact_form + '" target="_blank">';
-						mySenatePeople += rep.first_name + ' ' + rep.last_name;
+						mySenatePeople += '<a class="pol-name" href="' + represent.contact_form + '" target="_blank">';
+						mySenatePeople += represent.first_name + ' ' + represent.last_name;
 						mySenatePeople += '</a>';
 						mySenatePeople += '</p>';
 					}
@@ -46,11 +46,11 @@ $(document).ready(function () {
 
 				var myHousePeople = '<br><hr><br><p class="results-title">House Members</p>';
 			
-				$.each(data.results, function(i, rep) {
+				$.each(data.results, function(i, represent) {
 					if ('house' === rep.chamber.toLowerCase()) {
 						myHousePeople += '<p>';
-						myHousePeople += '<a class="pol-name" href="' + rep.contact_form + '" target="_blank">';
-						myHousePeople += rep.first_name + ' ' + rep.last_name;
+						myHousePeople += '<a class="pol-name" href="' + represent.contact_form + '" target="_blank">';
+						myHousePeople += represent.first_name + ' ' + represent.last_name;
 						myHousePeople += '</a>';
 						myHousePeople += '</p>';
 					}
