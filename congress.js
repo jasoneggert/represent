@@ -28,7 +28,7 @@ $(document).ready(function () {
 				var mySenatePeople = '<p class="results-title">Senators</p>';
 			
 				$.each(data.results, function(i, represent) {
-					if ('senate' === rep.chamber.toLowerCase()) {
+					if ('senate' === represent.chamber.toLowerCase()) {
 						mySenatePeople += '<p>';
 						mySenatePeople += '<a class="pol-name" href="' + represent.contact_form + '" target="_blank">';
 						mySenatePeople += represent.first_name + ' ' + represent.last_name;
@@ -47,7 +47,7 @@ $(document).ready(function () {
 				var myHousePeople = '<br><hr><br><p class="results-title">House Members</p>';
 			
 				$.each(data.results, function(i, represent) {
-					if ('house' === rep.chamber.toLowerCase()) {
+					if ('house' === represent.chamber.toLowerCase()) {
 						myHousePeople += '<p>';
 						myHousePeople += '<a class="pol-name" href="' + represent.contact_form + '" target="_blank">';
 						myHousePeople += represent.first_name + ' ' + represent.last_name;
