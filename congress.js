@@ -10,7 +10,7 @@ $(document).ready(function () {
 		$('.all-the-results').delay(500).fadeIn(700);
 		$('body > header').delay(500).css('height', '50px');
 				
-		var apiKey = '06bb09b47d9f48d99a70bbe000fe275d',
+		var apiKey = 'API KEY',
 			zipCode = $('#txt-zip').val(),
 			$resultsArea1 = $('#sen-lookup-results'),
 			$resultsArea2 = $('#house-lookup-results');
